@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 4 - POST</title>
+</head>
+<body>
+    <p>Crie um formulário onde o usuário informa seu nome, seu e-mail, sua data de nascimento e escolha numa 
+        lista suspensa a bandeira do seu cartão de crédito. Ao clicar em em botão de submit, exiba todos os dados 
+        na tela e não exiba o formulário após o preenchimento.
+    </p>
+
+    <form action="form4.php" method="post">
+        <p>Digite seu nome: <input type="text" required name="cxnome" id=""> </p>
+        <p>Digite seu email: <input type="email" required name="cxemail" id=""></p>
+        <p>Digite sua data de nascimento: <input type="date" required name="cxnasc" id=""></p>
+        <p>Selecione a bandeira do seu cartão: 
+            <select name="cxcartao" id="">
+                <option value="visa">Visa</option>
+                <option value="elo">Elo</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="maestro">Maestro</option>
+                <option value="hipercard">Hipercard</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Enviar">
+          
+    </form>
+</body>
+</html>
